@@ -1,0 +1,12 @@
+on:
+  workflow_run:
+    workflows: [Publish Docker image]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Deploy
