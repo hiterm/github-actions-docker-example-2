@@ -65,3 +65,4 @@ Run server and access `/graphql/playground`.
 ```
 $ cargo run --bin gen_schema
 ```
+
