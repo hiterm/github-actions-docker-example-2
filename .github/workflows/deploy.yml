@@ -6,9 +6,6 @@ on:
 
 jobs:
   push_to_registry:
-    permissions:
-      contents: read
-      packages: write
     uses: ./.github/workflows/publish-image.yml
   deploy:
     name: Deploy
